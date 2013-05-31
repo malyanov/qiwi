@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data>
+    <languages>
+        <item id="1">
+            <name>Первый язык</name>
+            <name lang="2">First language</name>
+        </item>
+        <item id="2">
+            <name>Second language</name>
+            <name lang="1">Второй язык</name>
+        </item>
+    </languages>
+    <currencies>
+        <item id="1">
+            <name>Первая валюта</name>
+            <name lang="2">First currency</name>
+        </item>
+        <item id="2">
+            <name>Second currency</name>
+            <name lang="1">Вторая валюта</name>
+        </item>
+        <item id="3">
+            <name>Third currency</name>
+            <name lang="1">Третья валюта</name>
+        </item>
+    </currencies>
+    <countries>
+        <item id="1" currency="1" language="1">
+            <name>Первая страна</name>
+            <name lang="2">First country</name>
+        </item>
+        <item id="2" currency="2" language="2">
+            <name>Second country</name>
+            <name lang="1">Вторая страна</name>
+        </item>
+        <item id="3" currency="3" language="2">
+            <name>Third country</name>
+            <name lang="1">Третья страна</name>
+        </item>
+    </countries>
+    <providers>
+        <item id="1">
+            <name lang="1">Первый провайдер</name>
+            <name lang="2">First provider</name>
+            <commissions>
+                <item currency="1">5</item>
+                <item currency="2">5</item>
+            </commissions>
+        </item>
+        <item id="2">
+            <name lang="2">Second provider</name>
+            <commissions>
+                <item currency="2">5</item>
+                <item currency="3">10</item>
+            </commissions>
+        </item>
+        <item id="3">
+            <name lang="1">Третий провайдер</name>
+            <name lang="2">Third provider</name>
+            <commissions>
+                <item currency="1">10</item>
+                <item currency="3">20</item>
+            </commissions>
+        </item>
+        <item id="4">
+            <name lang="1">Четвертый провайдер</name>
+            <commissions>
+                <item currency="1">5</item>
+                <item currency="2">10</item>
+                <item currency="3">20</item>
+            </commissions>
+        </item>
+    </providers>
+</data>

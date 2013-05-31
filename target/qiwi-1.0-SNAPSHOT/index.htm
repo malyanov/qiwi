@@ -1,0 +1,31 @@
+﻿<!DOCTYPE HTML>
+<html lang="ru">
+    <head>
+        <title>Приём платежей</title>
+    </head>
+    <body>        
+        <div class="top">
+            <form method="get">
+                <select name="country_id">
+                    #foreach($c in $countries)
+                    <option value="$c.id">$c.getName($langId)</option>
+                    #end
+                </select>
+                <select name="lang_id">
+                    #foreach($l in $languages)
+                    <option value="$l.id">$l.getName($langId)</option>
+                    #end
+                </select>
+            </form>
+        </div>
+        <div class="content">
+            <ul class="providers">
+                #foreach($p in $providers)
+                <li id="$p.id">$p.getName($langId)</option>
+                #end
+            </ul>
+        </div>
+        <div class="footer">
+        </div>
+    </body>
+</html>
