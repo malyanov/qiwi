@@ -18,7 +18,11 @@ public class TranslatableObj{
         this.names=namesMap;
     }
     public String getName(Integer langId){
-        return names.get(langId);
+        String name=names.get(langId);
+        if(name==null){
+            name=names.get(0);
+        }
+        return name;
     }
     public int getId(){
         return id;

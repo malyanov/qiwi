@@ -48,6 +48,7 @@
             </commissions>
         </item>
         <item id="2">
+            <name lang="1">Второй провайдер</name><!--added-->
             <name lang="2">Second provider</name>
             <commissions>
                 <item currency="2">5</item>
@@ -64,6 +65,7 @@
         </item>
         <item id="4">
             <name lang="1">Четвертый провайдер</name>
+            <name lang="2">Fourth provider</name><!--added-->
             <commissions>
                 <item currency="1">5</item>
                 <item currency="2">10</item>
@@ -71,4 +73,58 @@
             </commissions>
         </item>
     </providers>
+    <strings>
+        <item id="1">
+            <name lang="1">Добро пожаловать!</name>
+            <name lang="2">Welcome!</name>
+        </item>
+        <item id="2">
+            <name lang="1">Приём платежей</name>
+            <name lang="2">Acceptance of payments</name>
+        </item>
+        <item id="3">
+            <name lang="1">Закрыть</name>
+            <name lang="2">Close</name>
+        </item>
+        <item id="4">
+            <name lang="1">Мальянов Дмитрий</name>
+            <name lang="2">Malyanov Dmitry</name>
+        </item>
+        <item id="5">
+            <name lang="1">Сумма платежа</name>
+            <name lang="2">Amount of payment</name>
+        </item>
+        <item id="6">
+            <name lang="1">Комиссия</name>
+            <name lang="2">Сommission</name>
+        </item>
+        <item id="7">
+            <name lang="1">Оплатить</name>
+            <name lang="2">Pay</name>
+        </item>
+        <item id="8">
+            <name lang="1">Сумма комиссии</name>
+            <name lang="2">Commission sum</name>
+        </item>
+        <item id="9">
+            <name lang="1">На счёт</name>
+            <name lang="2">For pay</name>
+        </item>
+        <item id="10">
+            <name lang="1">Номер абонента</name>
+            <name lang="2">Account number</name>
+        </item>
+        <item id="11">
+            <name lang="1">Отмена</name>
+            <name lang="2">Cancel</name>
+        </item>
+        <item id="12">
+            <name lang="1">Введите номер абонента!</name>
+            <name lang="2">Please, enter the account number!</name>
+        </item>
+        <item id="13">
+            <name lang="1">Введите сумму платежа!</name>
+            <name lang="2">Please, enter the amount of payment!</name>
+        </item>
+    </strings>
 </data>

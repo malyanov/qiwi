@@ -1,31 +1,77 @@
 ﻿<!DOCTYPE HTML>
 <html lang="ru">
     <head>
-        <title>Приём платежей</title>
+        <title>$strings[2].getName($langId)</title>
+        <script type="text/javascript">
+            var errors=new Array("$strings[12].getName($langId)", "$strings[13].getName($langId)");
+        </script>
+        <script type="text/javascript" src="static/js/jquery.js"></script>
+        <script type="text/javascript" src="static/js/script.js"></script>
+        <link href="static/css/style.css" rel="stylesheet" type="text/css" media="all">
     </head>
-    <body>        
-        <div class="top">
-            <form method="get">
-                <select name="country_id">
-                    #foreach($c in $countries)
-                    <option value="$c.id">$c.getName($langId)</option>
-                    #end
-                </select>
-                <select name="lang_id">
-                    #foreach($l in $languages)
-                    <option value="$l.id">$l.getName($langId)</option>
-                    #end
-                </select>
-            </form>
+    <body>
+        <div>
+            <div class="top shadow">
+                <form method="get">
+                    <select name="country_id">
+                        #foreach($c in $countries)
+                        <option #if($c.id==$countryId)selected#end value="$c.id">$c.getName($langId)</option>
+                        #end
+                    </select>
+                    <select name="lang_id">
+                        #foreach($l in $languages)
+                        <option #if($l.id==$langId)selected#end value="$l.id">$l.getName($langId)</option>
+                        #end
+                    </select>
+                </form>
+            </div>
+            <div class="clear"></div>
         </div>
-        <div class="content">
-            <ul class="providers">
-                #foreach($p in $providers)
-                <li id="$p.id">$p.getName($langId)</option>
-                #end
-            </ul>
+        <div class="content shadow">
+            <h1 id="header" class="text_shadow_header">$strings[2].getName($langId)</h1>
+            <div class="left_block">
+                <ul class="providers">
+                    #foreach($p in $providers)
+                    <li class="shadow" id="$p.id">$p.getName($langId)</option>
+                        #end
+                </ul>
+            </div>
+            <div class="right_block">
+                <h1 class="text_shadow">$strings[1].getName($langId)</h1>
+            </div>
+            <div class="clear"></div>
+            <p class="copyright text_shadow_header">
+                &copy; 2013 <a href="mailto:malyanov.dmitry@gmail.com">$strings[4].getName($langId)</a>
+            </p>
         </div>
-        <div class="footer">
+        <div class="popup_wrap">
+            <div class="popup">
+                <h2 id="provider_name" class="text_shadow_header"></h2>
+                <div class="form">
+                    <form method="get" class="pay_form">
+                        <div>
+                            <label for="account" class="text_shadow">$strings[10].getName($langId)</label>
+                            <input name="account" id="account" class="resetable" type="text"/><br/>
+                            <div class="clear"></div>
+                        </div>
+                        <div>
+                            <label for="money" class="text_shadow">$strings[5].getName($langId), <span class="currency"></span></label>
+                            <input name="money" class="resetable" id="money" type="text"/>
+                            <div class="clear"></div>
+                        </div>
+                        <p class="text_shadow">$strings[6].getName($langId) <span id="commission">0</span> %</p>
+                        <p class="text_shadow">$strings[8].getName($langId), <span id="commission_sum" class="hidable">0</span> <span class="currency"></span></p>
+                        <p class="text_shadow">$strings[9].getName($langId), <span id="pay_sum" class=" hidable green">0</span> <span class="currency"></span></p>
+                    </form>
+                    <p id="error"></p>
+                    <div class="buttons_bar">
+                        <div class="button shadow pay">$strings[7].getName($langId)</div>
+                        <div class="button shadow cancel">$strings[11].getName($langId)</div>
+                        <div class="clear"></div>
+                    </div>
+                </div>
+            </div>
+            <a href="$formLink.href" id="formLink"></a>
         </div>
     </body>
 </html>

@@ -1,0 +1,139 @@
+html,body, ul{
+    margin: 0;
+    padding: 0;
+    font-family: Arial;
+}
+.clear{
+    clear: both
+}
+.shadow{
+    -moz-box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    -webkit-box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+.text_shadow_header{
+    text-shadow: 1px 1px 2px lightgray, 0 0 0.1em black;
+}
+.text_shadow{
+    text-shadow: 1px 1px 2px black, 0 0 1em lightgray;
+}
+.top{
+    width: 260px;
+    height: 24px;
+    background-color: lightblue;
+    border-radius: 7px;
+    padding:5px;
+    margin:20px 20px 14% 0;
+    float:right
+}
+.content, .popup{
+    width: 550px;
+    height: 250px;
+    background-color: lightgray;
+    border-radius: 15px;
+    margin: 0 auto;
+    padding:20px;
+}
+h1, h2{
+    margin-top: 0;
+    margin-bottom: 40px;
+    text-align: center;
+}
+h2{
+    margin-bottom:10px
+}
+h1#header{
+    font-size: 40px;
+}
+.content div.right_block{
+    float: right;
+    width: 300px;
+}
+.content div.left_block{
+    width: 200px;
+    float: left;
+}
+.providers li, .button{
+    list-style: none;
+    border: solid 1px black;
+    background-color: lightblue;
+    margin-bottom:5px;
+    border-radius:5px;
+    cursor: pointer;
+    font:bold 16px Arial;
+    text-align: center;
+    padding:5px;
+}
+.providers li:hover, .button:hover{
+    background-color: lightgrey!important;
+    border-color: white;
+}
+.copyright{
+    text-align: center;
+    margin-top: 35px;
+}
+.popup_wrap{
+    display: none;
+    background-color:rgba(0,0,0,0.7);
+    width:100%;
+    height:100%;
+    top:0;
+    left: 0;
+    position: absolute;
+}
+.popup{
+    width:500px;
+    margin-left: -265px;
+    margin-top: -140px;
+    top:50%;
+    left:50%;
+    height: 305px;
+    position: absolute;
+}
+.buttons_bar{
+    width: 345px;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+.buttons_bar .button{
+    width:150px;
+    float: left
+}
+.buttons_bar .cancel{
+    margin-left:20px;
+    background-color: lightpink
+}
+.buttons_bar .pay{
+    background-color: lightgreen
+}
+.pay_form{
+    padding-left:50px;
+    padding-top: 10px
+}
+.pay_form p, .pay_form label{
+    font:bold 16px Arial;
+}
+.pay_form p span:first-child{
+    float: right;
+    font-size: 20px;
+    color: red;
+    padding-right:50px
+}
+.pay_form input{
+    float:right;
+    font:bold 20px Arial;
+    width: 100px;
+    margin-right:45px
+}
+.green{
+    color: lightgreen!important;
+}
+#error{
+    margin: 0;
+    text-align: center;
+    color: red;
+    height:19px
+}
+.hidable{
+    visibility: hidden
+}
